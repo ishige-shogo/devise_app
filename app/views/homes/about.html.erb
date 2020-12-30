@@ -1,5 +1,6 @@
-<h1>Homes#top</h1>
-<p>Find me in app/views/homes/top.html.erb</p>
+about 
+
+<%=link_to "admin", new_admin_registration_path %>
 
 <% if user_signed_in? %>
     ユーザーでログインしています
@@ -10,5 +11,3 @@
     管理者でログインしています
     <%=link_to "管理者ログアウト",  destroy_admin_session_path, method: :delete %>
 <% end %>
-
-<%=link_to "user", new_user_registration_path %>
