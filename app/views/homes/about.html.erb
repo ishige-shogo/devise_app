@@ -1,0 +1,13 @@
+about 
+
+<%=link_to "admin", new_admin_registration_path %>
+
+<% if user_signed_in? %>
+    ユーザーでログインしています
+    <%=link_to "ユーザーログアウト",  destroy_user_session_path, method: :delete %>
+<% end %>
+
+<% if admin_signed_in? %>
+    管理者でログインしています
+    <%=link_to "管理者ログアウト",  destroy_admin_session_path, method: :delete %>
+<% end %>
