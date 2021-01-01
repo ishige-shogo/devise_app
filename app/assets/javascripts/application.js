@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require activestorage
 //= require_tree .
+/*global $*/
 
 $(function() {
     $('.a').slick({
